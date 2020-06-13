@@ -3,7 +3,7 @@
  
 void main()
 {
-    int number, sum = 0, rem = 0, cube = 0, temp;
+    int number, sum = 0, rem = 0, cub = 0, temp;
  
     printf ("enter a number");
     scanf("%d", &number);
@@ -11,8 +11,8 @@ void main()
     while (number != 0)
     {
         rem = number % 10;
-        cube = pow(rem, 3);
-        sum = sum + cube;
+        cub = pow(rem, 3);
+        sum = sum + cub;
         number = number / 10;
     }
     if (sum == temp)
