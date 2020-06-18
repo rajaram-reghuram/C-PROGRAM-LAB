@@ -2,7 +2,8 @@
 
 int main()
 {
-  int array[100], n, i, pass, swap;
+  int a[100], n, i, pass, swap;
+  
 
   printf("Enter number of elements\n");
   scanf("%d", &n);
@@ -10,7 +11,7 @@ int main()
   printf("Enter %d integers\n", n);
 
   for (i = 0; i < n; i++)
-    scanf("%d", &array[i]);
+    scanf("%d", &a[i]);
     
     
  for(pass=0;pass<=n-1;pass++)
@@ -19,11 +20,11 @@ int main()
     for (i = 0 ; i< n - 1; i++)
     {
     
-      if (array[i] >array[i+1]) /* For decreasing order use < */
+      if (a[i]>a[i+1]) 
       {
-        swap       = array[i];
-        array[i]   = array[i+1];
-        array[i+1] = swap;
+        swap       = a[i];
+        a[i]   = a[i+1];
+       a[i+1] = swap;
       }
    
    }
@@ -33,7 +34,7 @@ int main()
   printf("Sorted list in ascending order:\n");
 
   for (i = 0; i < n; i++)
-     printf("%d\n", array[i]);
+     printf("%d\n", a[i]);
 
   return 0;
 }
