@@ -1,31 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <string.h>
 
-void main()
-	{
-		char str1[100], str2[25];
-		int i,j;
+int main()
+{
+  char a[1000], b[1000];
 
-		printf("\n Enter First String: ");
-		gets(str1);
-		printf("\n Enter Second String: ");
-		gets(str2);
+  printf("Enter the first string\n");
+  gets(a);
 
-		while(str1[i]!='\0')
-  			{
-   				 i++;
-  			}
- 		
+  printf("Enter the second string\n");
+  gets(b);
 
-  		while(str2[j]!='\0')
-  			{
-   				 str1[i]=str2[j];
-    				 j++;
-    				 i++;
-  			}
-		str1[i] = '\0'; 
-    
-    
-    
-		printf("\n The concatenated string is: %s \n ", str1);
-		
-	}
+  strcat(a, b);
+
+  printf("String obtained on concatenation: %s\n", a);
+
+  return 0;
+}
+
