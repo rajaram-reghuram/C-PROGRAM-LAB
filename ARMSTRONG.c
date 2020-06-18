@@ -1,22 +1,22 @@
 #include <stdio.h>
-#include <math.h>
+
  
 void main()
 {
-    int number, sum = 0, rem = 0, cub = 0, temp;
+    int number, sum = 0, rem = 0, copy;
  
-    printf ("enter a number");
+    printf ("enter a number\n");
     scanf("%d", &number);
-    temp = number;
+    copy = number;
     while (number != 0)
     {
         rem = number % 10;
-        cub = pow(rem, 3);
-        sum = sum + cub;
+        
+        sum = sum + (rem*rem*rem);
         number = number / 10;
     }
-    if (sum == temp)
-        printf ("The given no is armstrong no");
+    if (sum == copy)
+        printf ("The given no: is armstrong \n");
     else
-        printf ("The given no is not a armstrong no");
+        printf ("The given no is not armstrong\n ");
 }
