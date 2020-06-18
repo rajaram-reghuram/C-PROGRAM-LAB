@@ -3,11 +3,11 @@
 void main()
 
 {  
-    int num;
+    
 
  
 
-    int i,  item ;
+    int i,  item ,num;
 
  
 
@@ -15,7 +15,7 @@ void main()
 
     scanf("%d", &num);
 
-    int array[num];
+    int array[100];
 
     printf("Enter the elements one by one \n");
 
