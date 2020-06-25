@@ -29,7 +29,7 @@ void main()
 
  
 
-    printf("Enter the element to be searched ");
+    printf("Enter the element to be searched\n ");
 
     scanf("%d", &item);
 
@@ -41,13 +41,17 @@ void main()
 
         if (item == array[i] )
 
-
-           printf("Element is present in the array at position");
-
+          
+         
+       {
+           printf("Element is present in the array at position %d",i+1);
+       }
+           
+       else if (i==num)
+         {
+         printf("Element is not present in the array\n");
+         }
 
     }
-    if (i==num)
-         
-         printf("Element is not present in the array\n");
+    
 
-}
